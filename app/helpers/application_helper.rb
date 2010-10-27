@@ -1,5 +1,9 @@
 module ApplicationHelper
   
+  def logo
+    image_tag("logo.png", :alt => "Flitter", :class => "round")
+  end
+  
   # Return a title on a per-page basis
   def title                                               # method definition
     base_title = "Ruby on Rails Tutorial Sample App"      # variable assignment
